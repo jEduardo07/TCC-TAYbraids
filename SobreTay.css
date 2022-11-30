@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    max-width: 100%;
+}
+
+.banner{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todal{
+    background-color: rgb(198, 151, 241);
+}
+
+h1{
+    font-size: 80px;
+    justify-content: center;
+    text-align: center;
+    
+}
+h2{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.NossaHistoria{
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 3rem;
+    margin-right: auto;
+    
+}
+.NossaHistoria p{
+    text-align: justify;
+    font-size: 20px;
+    
+}
+.MissaoVisaoValores{
+    background-color: rgb(198, 151, 241);
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#672abf, #743ec0);
+}
+
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./assets/Evelynn.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 230px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 70px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 18px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+.historia{
+    width: 1000px;
+    border-radius: 50px;
+    border: #333 solid 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+}
+
+.MissaoVisaoValores{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+@media(min-width: 320px) and (max-width:400px){
+    body{
+        width: 100%;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 999px){
+    body{
+        padding: 0;
+        width: 50%;  
+    }
+}
+
+/* Footer */
+.whats{
+    width: 20px;
+    cursor: pointer;
+}
+.insta{
+    width: 20px;   
+    cursor: pointer; 
+}
+.face{
+    width: 20px;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+footer{
+    padding: 50px 30px ;
+    background: rgba(131,25,217,1);
+    margin-top: 0;
+}
+
+.container-footer{
+    max-width: 1600px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 33.333%;
+    padding: 0 100px;
+}
+
+.footer-col h4{
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 0px;
+   
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 300;
+    display:block;
+    transition: all 0.6s ease;
+    margin-top: 30px;
+}
+
+.footer-col ul li a:hover{
+    color: rgb(69, 7, 128);
+    padding-left: 10px;
+}
+
+.footer-col .redes-sociais{
+    margin-top: 25px;
+}
+
+.footer-col .redes-sociais a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 50px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50px;
+    color:aliceblue;
+    border: 1px solid;
+    transition: all 0.5s ease ;
+}
+
+.footer-col .redes-sociais a img{
+    font-size: 20px;
+
+}
+
+.footer-col .redes-sociais a:hover{
+    color: rgb(210, 169, 248);
+    background-color: aliceblue;
+}
+
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    background-color: rgb(190, 117, 250);
+}
+
+.footer-col .form-sub input::placeholder{
+    color: aliceblue;
+}
+
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    color: aliceblue;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: rgb(197, 141, 250);
+}
+
+/*Forma responsiva*/
+
+@media (max-width:800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+ @media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+        margin-bottom: 60px;
+        }
+    }    
+}s
+
